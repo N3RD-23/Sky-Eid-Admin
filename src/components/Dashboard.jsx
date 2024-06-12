@@ -5,7 +5,7 @@ import { useSpring, animated } from "react-spring";
 const { Title } = Typography;
 
 const titleStyle = {
-  color: '#808080'
+  color: '#808080',
 }
 
 const textStyle = {
@@ -60,7 +60,7 @@ const Dashboard = () => {
         return res.json();
       })
       .then((teams) => {
-        console.log(teams);
+        //console.log(teams);
         setTeams(teams);
       });
   }, []);
@@ -71,25 +71,25 @@ const Dashboard = () => {
       <Row gutter={16}>
         <Col span={12} style={{ marginBottom: "10px" }}>
           <Card bordered={false}>
-            <Title level={3} style={titleStyle}>Total Teams</Title>
-            <Title level={3} style={textStyle}><Teams /></Title>
+            <Title level={4} style={titleStyle}>Total Teams</Title>
+            <Title level={3} style={textStyle} className='text'><Teams /></Title>
           </Card>
         </Col>
         <Col span={12} style={{ marginBottom: "10px" }}>
           <Card bordered={false}>
-            <Title level={3} style={titleStyle}>Expected Number of Teams</Title>
+            <Title level={4} style={titleStyle}>Expected Number of Teams</Title>
             <Title level={3} style={textStyle}><ExpectedNumber /></Title>
           </Card>
         </Col>
         <Col span={12} style={{ marginBottom: "10px" }}>
           <Card bordered={false}>
-            <Title level={3} style={titleStyle}>Total Players</Title>
+            <Title level={4} style={titleStyle}>Total Players</Title>
             <Title level={3} style={textStyle}><Players /></Title>
           </Card>
         </Col>
         <Col span={12} style={{ marginBottom: "10px" }}>
           <Card bordered={false}>
-            <Title level={3} style={titleStyle}>Expected Number of Players</Title>
+            <Title level={4} style={titleStyle}>Expected Number of Players</Title>
             <Title level={3} style={textStyle}><ExpectedPlayers /></Title>
           </Card>
         </Col>
