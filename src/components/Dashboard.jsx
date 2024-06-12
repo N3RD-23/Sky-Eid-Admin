@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Card, Col, Row, Statistic, Typography } from "antd";
+import { Card, Col, Row, Typography } from "antd";
 import { useSpring, animated } from "react-spring";
 
 const { Title } = Typography;
